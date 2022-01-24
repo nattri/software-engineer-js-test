@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Test application</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1"/>     
-    </head>
-    <body></body>
+	<head>
+		<title>Test application</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1"/>     
+	</head>
+	<body>
+		<h1>Simple Example</h1>
+		<form action="#" id="form">
+			<fieldset>
+				<label for="fileSelector">Select an Image file</label>
+				<input type="file" id="fileSelector" /> <br/>
+				<input type="submit" value="Submit">
+			</fieldset>
+		</form>
+		<canvas id="editorCanvas"></canvas>
+		<div>
+			<label>Scale image:</label>
+			<button id="scaleToDouble">Scale 2x</button>
+			<button id="scaleToHalf">Scale 0.5x</button>
+		</div>
+		<div>
+			<label>Move image:</label>
+			<button id="moveToLeft">&larr;</button>
+			<button id="moveToRight">&rarr;</button>
+			<button id="moveToTop">&uarr;</button>
+			<button id="moveToBottom">&darr;</button>
+		</div>
+		<div>
+			<button id="resetImage">Reset image</button>
+		</div>
+		<div>
+			<label for="importSettings">Select a JSON file to import settings </label>
+			<input type="file" id="importSettings" disabled/>
+		</div>
+	</body>
 </html>
